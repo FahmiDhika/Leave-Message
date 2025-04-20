@@ -1,8 +1,10 @@
 import express from "express"
+import cors from "cors"
 
 import messageRouter from "./router"
 
 const app = express()
+app.use(cors())
 
 app.use(`/message`, messageRouter)
 
