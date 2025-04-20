@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.ts",
     "build": "tsc",
-    "start": "npm run build && node dist/index.js"
+    "start": "nodemon dist/index.js",
+    "test": "npm run build && npm start"
   },
   "keywords": [],
   "author": "",
